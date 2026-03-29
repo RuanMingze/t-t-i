@@ -9,17 +9,14 @@ const screenshots = [
   {
     src: "https://luckycola.com.cn/public/imgs/luckycola_Imghub_forever_c4w8eKYK17747658308018006.png",
     alt: "TheGuide 工具箱截图 1",
-    caption: "工具箱主页",
   },
   {
     src: "https://luckycola.com.cn/public/imgs/luckycola_Imghub_forever_0NjpyGMt17747655864435411.png",
     alt: "TheGuide 工具箱截图 2",
-    caption: "工具箱工具页面",
   },
   {
     src: "https://luckycola.com.cn/public/imgs/luckycola_Imghub_forever_ktUpRL8G17747649167334817.png",
     alt: "TheGuide 工具箱截图 3",
-    caption: "工具箱导航页面",
   },
 ]
 
@@ -111,25 +108,13 @@ export function ScreenshotCarousel() {
         </div>
 
         {/* Caption */}
-        <div className="relative mt-4 h-6 overflow-hidden">
-          {screenshots.map((screenshot, index) => (
-            <p
-              key={screenshot.caption}
-              data-aos="fade-up"
-              data-aos-delay="200"
-              className={cn(
-                "absolute left-0 right-0 text-center text-sm text-muted-foreground transition-all duration-500",
-                index === currentIndex
-                  ? "opacity-100 translate-y-0"
-                  : index < currentIndex
-                    ? "opacity-0 -translate-y-full"
-                    : "opacity-0 translate-y-full"
-              )}
-            >
-              {screenshot.caption}
-            </p>
-          ))}
-        </div>
+        <p
+          data-aos="fade-up"
+          data-aos-delay="200"
+          className="mt-4 text-center text-sm text-muted-foreground"
+        >
+          界面简洁美观，功能丰富实用
+        </p>
       </div>
     </section>
   )
