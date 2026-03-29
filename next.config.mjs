@@ -4,6 +4,7 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   output: 'export',
+  basePath: '/t-t-i',
   images: {
     unoptimized: true,
     remotePatterns: [
